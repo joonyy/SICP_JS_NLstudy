@@ -16,7 +16,7 @@ function sum_iter(term, a, next, b) {
                ? result
                : iter(next(a),result+term(a));
     }
-    return iter(a,0);
+    return iter(a,0);//a,b가 아니라 a,0.
 }
 console.log(sum_recursive(cube,1,inc,10));
 console.log(sum_iter(cube,1,inc,10));
