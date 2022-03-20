@@ -18,3 +18,4 @@ function first_denomination(kinds_of_coins) {
 }
 
 console.log(cc(11,5));
+/*기억공간의 크기는 O(n)으로 늘어나고, 단계 수는 O(n)으로 늘어난다. */

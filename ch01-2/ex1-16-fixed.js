@@ -9,8 +9,8 @@ function fast_expt(a,b,n){//a*b^n
     return n===0
           ?a
           :is_even(n)
-          ?a*square(fast_expt(1,b,n/2))//a*(b^(n/2))
-          :b*fast_expt(a,b,n-1);//ab(b^n-1)
+          ?square(fast_expt(a,b,n/2))//a*(b^(n/2))
+          :fast_expt(a*b,b,n-1);//ab(b^n-1)
 }
 
 console.log(fast_expt(2,3,4));
